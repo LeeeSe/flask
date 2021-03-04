@@ -5,11 +5,11 @@ app = Flask(__name__)  # 创建对象
 @app.route('/') # 绑定对应的 URL
 def hello():  # 只需要让它表达出所要处理页面的含义即可
     return '<h1>Hello Totoro!</h1><img src="http://helloflask.com/totoro.gif">'
-    
 
-@app.route('/user/<name>')
-def user_page(name):  
-    return 'User: %s' % escape(name)
+
+# @app.route('/user/<name>')
+# def user_page(name):  
+#     return 'User: %s' % escape(name)
 
 @app.route('/test')
 def test_url_for():
